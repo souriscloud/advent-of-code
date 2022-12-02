@@ -1,5 +1,5 @@
 import inquirer from 'inquirer'
-import { readdir } from 'fs/promises'
+import { readdir } from 'node:fs/promises'
 
 async function runPuzzleSolution(dir) {
   const { run } = await import(`./${dir}/solution.mjs`)
